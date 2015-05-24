@@ -3,9 +3,8 @@ The file activity.txt si produced by running the run_analysis.R script.
 
 Bellow the given number is the column number. It is followed by the column name wich is also the variable name.
 
-*1 subject: Id of the subject whose row belongs to.
-
-*2 activity: Activity : Can be LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
+* 1 subject: Id of the subject whose row belongs to.
+* 2 activity: Activity : Can be LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
 
 
 The following variables are calculated this way:
