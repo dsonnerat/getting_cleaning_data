@@ -1,7 +1,7 @@
 ## Features provided by the file activity.txt
 The file activity.txt si produced by running the run_analysis.R script.
 
-Bellow the given number is the column number. It is followed by the column name wich is also the variable name.
+Below the given number is the column number. It is followed by the column name wich is also the variable name.
 
 * 1 subject: Id of the subject whose row belongs to.
 * 2 activity: Activity : Can be LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
@@ -10,7 +10,7 @@ Bellow the given number is the column number. It is followed by the column name 
 The following variables are calculated this way:
 Each variable is the mean of all source data rows that bellong to the couple (subject,activity) 
 The variable name is the same name that exist in the source data.
-In order to have information on their meaning and unit, you can read the information given by the file features.txt and features_info.txt that can be found in the zip https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+In order to have information on their meaning and unit, see section "Detail information on how each variable is calculated" below.
 
 * 3 tBodyAcc.mean...X
 * 4 tBodyAcc.mean...Y
@@ -78,3 +78,39 @@ In order to have information on their meaning and unit, you can read the informa
 * 66 fBodyBodyGyroMag.std..
 * 67 fBodyBodyGyroJerkMag.mean..
 * 68 fBodyBodyGyroJerkMag.std..
+
+## Detail information on how each variable is calculated
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+Note: This details information is an extraction of the file features_info.txt that can be found in the zip https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
