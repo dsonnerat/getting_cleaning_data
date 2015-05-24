@@ -113,4 +113,4 @@ The set of variables that were estimated from these signals are:
 * mean(): Mean value
 * std(): Standard deviation
 
-Note: This details information is an extraction of the file features_info.txt that can be found in the zip https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+Note: This detail information is an extraction of the file features_info.txt that can be found in the zip https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
